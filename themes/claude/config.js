@@ -23,7 +23,7 @@ const CONFIG = {
   CLAUDE_SUBTITLE_DARK_ONLY: process.env.NEXT_PUBLIC_CLAUDE_SUBTITLE_DARK_ONLY === 'true', // 副标题在浅色和深色模式下都显示，设为 true 则仅深色模式
 
   // GitHub 侧栏资料卡配置
-  CLAUDE_PROFILE_AVATAR: process.env.NEXT_PUBLIC_CLAUDE_PROFILE_AVATAR || '', // 头像URL；留空则回退到 AVATAR/siteInfo.icon
+  CLAUDE_PROFILE_AVATAR: process.env.NEXT_PUBLIC_CLAUDE_PROFILE_AVATAR || 'https://media.licdn.com/dms/image/v2/D5603AQHDeSHMAFqb_Q/profile-displayphoto-crop_800_800/B56ZsQB9xmKEAI-/0/1765500513150?e=1782345600&v=beta&t=p6vvJWwKXokaOpqwZqx1u2Muj4SDGxA-YzT9BSUa_80', // 头像URL；留空则回退到 AVATAR/siteInfo.icon
   CLAUDE_FOOTER_COPYRIGHT: process.env.NEXT_PUBLIC_CLAUDE_FOOTER_COPYRIGHT || '', // 例如：© 2023-2026 Yicheng；留空则使用 SINCE + AUTHOR
 
   // README 渲染缓存（可由 Notion 配置文档中的同名字段覆盖）
