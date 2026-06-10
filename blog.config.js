@@ -16,7 +16,7 @@ const BLOG = {
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Jinyeung Chae', 
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Start-Notion', 
   BIO: process.env.NEXT_PUBLIC_BIO || 'Writing a book with Notion', // 个人简介，支持Markdown语法
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://notion-next-mu-mocha-48.vercel.app/', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, Blog', // 网站关键词 英文逗号隔开
