@@ -57,7 +57,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'START-NOTION',
 
-  BIO: process.env.NEXT_PUBLIC_BIO || 'Writing a book with Notion',
+  BIO: process.env.NEXT_PUBLIC_BIO || 'Every Great Business Starts as a Notion.',
   // Personal bio (Markdown supported)
 
   LINK:
