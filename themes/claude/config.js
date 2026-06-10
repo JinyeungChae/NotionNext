@@ -1,40 +1,83 @@
 const CONFIG = {
-  // 博客標題 雙語言
-  CLAUDE_BLOG_NAME: process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME || 'HOME',
-  CLAUDE_BLOG_NAME_EN: process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME_EN || process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME || 'Typography',
+  // Blog Title (Bilingual)
+  CLAUDE_BLOG_NAME:
+    process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME || 'HOME',
 
-  CLAUDE_POST_AD_ENABLE: process.env.NEXT_PUBLIC_CLAUDE_POST_AD_ENABLE || false, // 文章列表是否插入广告
+  CLAUDE_BLOG_NAME_EN:
+    process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME_EN ||
+    process.env.NEXT_PUBLIC_CLAUDE_BLOG_NAME ||
+    'Typography',
 
-  CLAUDE_POST_COVER_ENABLE: process.env.NEXT_PUBLIC_CLAUDE_POST_COVER_ENABLE || false, // 是否展示博客封面
+  CLAUDE_POST_AD_ENABLE:
+    process.env.NEXT_PUBLIC_CLAUDE_POST_AD_ENABLE || false,
+  // Whether to insert advertisements into the post list
 
-  CLAUDE_ARTICLE_RECOMMEND_POSTS: process.env.NEXT_PUBLIC_CLAUDE_ARTICLE_RECOMMEND_POSTS || true, // 文章详情底部显示推荐
+  CLAUDE_POST_COVER_ENABLE:
+    process.env.NEXT_PUBLIC_CLAUDE_POST_COVER_ENABLE || false,
+  // Whether to display post cover images
 
-  // 菜单配置
-  CLAUDE_MENU_CATEGORY: true, // 显示分类
-  CLAUDE_MENU_TAG: true, // 显示标签
-  CLAUDE_MENU_ARCHIVE: true, // 显示归档
+  CLAUDE_ARTICLE_RECOMMEND_POSTS:
+    process.env.NEXT_PUBLIC_CLAUDE_ARTICLE_RECOMMEND_POSTS || true,
+  // Show recommended posts at the bottom of article pages
 
-  // 目录配置
-  CLAUDE_TOC_ENABLE: process.env.NEXT_PUBLIC_CLAUDE_TOC_ENABLE !== 'false', // 是否显示目录，默认开启
-  CLAUDE_TOC_SHOW_LEVEL3: process.env.NEXT_PUBLIC_CLAUDE_TOC_SHOW_LEVEL3 !== 'false', // 是否显示第三级目录，默认开启; 设为 false 只显示 L1+L2
-  CLAUDE_TOC_SCROLL_BEHAVIOR: process.env.NEXT_PUBLIC_CLAUDE_TOC_SCROLL_BEHAVIOR || 'instant', // 滚动行为：'smooth' 或 'instant'
+  // Navigation Menu Configuration
+  CLAUDE_MENU_CATEGORY: true,
+  // Show Categories
 
-  // 副标题配置
-  CLAUDE_SUBTITLE_DARK_ONLY: process.env.NEXT_PUBLIC_CLAUDE_SUBTITLE_DARK_ONLY === 'true', // 副标题在浅色和深色模式下都显示，设为 true 则仅深色模式
+  CLAUDE_MENU_TAG: true,
+  // Show Tags
 
-  // GitHub profile image 
-  CLAUDE_PROFILE_AVATAR: process.env.NEXT_PUBLIC_CLAUDE_PROFILE_AVATAR || 'https://jmimwmtkeyugnrttxwnl.supabase.co/storage/v1/object/public/start-notion/START-NOTION%20LOGO.gif', // 头像URL；留空则回退到 AVATAR/siteInfo.icon
-  CLAUDE_FOOTER_COPYRIGHT: process.env.NEXT_PUBLIC_CLAUDE_FOOTER_COPYRIGHT || '', // 例如：© 2023-2026 Yicheng；留空则使用 SINCE + AUTHOR
+  CLAUDE_MENU_ARCHIVE: true,
+  // Show Archives
 
-  // README 渲染缓存（可由 Notion 配置文档中的同名字段覆盖）
+  // Table of Contents (TOC) Configuration
+  CLAUDE_TOC_ENABLE:
+    process.env.NEXT_PUBLIC_CLAUDE_TOC_ENABLE !== 'false',
+  // Enable Table of Contents (enabled by default)
+
+  CLAUDE_TOC_SHOW_LEVEL3:
+    process.env.NEXT_PUBLIC_CLAUDE_TOC_SHOW_LEVEL3 !== 'false',
+  // Display Level 3 headings in TOC (enabled by default)
+  // Set to false to show only Level 1 and Level 2 headings
+
+  CLAUDE_TOC_SCROLL_BEHAVIOR:
+    process.env.NEXT_PUBLIC_CLAUDE_TOC_SCROLL_BEHAVIOR || 'instant',
+  // Scrolling behavior: 'smooth' or 'instant'
+
+  // Subtitle Configuration
+  CLAUDE_SUBTITLE_DARK_ONLY:
+    process.env.NEXT_PUBLIC_CLAUDE_SUBTITLE_DARK_ONLY === 'true',
+  // Show subtitle in both light and dark modes by default
+  // Set to true to display only in dark mode
+
+  // GitHub Profile Image
+  CLAUDE_PROFILE_AVATAR:
+    process.env.NEXT_PUBLIC_CLAUDE_PROFILE_AVATAR ||
+    'https://jmimwmtkeyugnrttxwnl.supabase.co/storage/v1/object/public/start-notion/START-NOTION%20LOGO.gif',
+  // Avatar image URL
+  // If empty, falls back to AVATAR or siteInfo.icon
+
+  CLAUDE_FOOTER_COPYRIGHT:
+    process.env.NEXT_PUBLIC_CLAUDE_FOOTER_COPYRIGHT || '',
+  // Example: © 2023–2026 Yicheng
+  // If empty, uses SINCE + AUTHOR
+
+  // README Rendering Cache
+  // Can be overridden by a field with the same name in the Notion configuration document
   CLAUDE_README_CACHE_ENABLED:
     process.env.NEXT_PUBLIC_CLAUDE_README_CACHE_ENABLED !== 'false',
 
-  // Contribution 持久化（可由 Notion 配置文档中的同名字段覆盖）
-  // 依赖 COCKROACH_DATABASE_URL（或 DATABASE_URL）
+  // Contribution Persistence
+  // Can be overridden by a field with the same name in the Notion configuration document
+  // Requires COCKROACH_DATABASE_URL (or DATABASE_URL)
   CLAUDE_CONTRIBUTION_PERSIST_ENABLED:
     process.env.NEXT_PUBLIC_CLAUDE_CONTRIBUTION_PERSIST_ENABLED !== 'false',
+
   CLAUDE_CONTRIBUTION_EVENT_LIMIT:
-    Number(process.env.NEXT_PUBLIC_CLAUDE_CONTRIBUTION_EVENT_LIMIT || 50000)
+    Number(
+      process.env.NEXT_PUBLIC_CLAUDE_CONTRIBUTION_EVENT_LIMIT || 50000
+    )
+  // Maximum number of contribution events to persist
 }
+
 export default CONFIG
