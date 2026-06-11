@@ -50,7 +50,7 @@ module.exports = {
 
   // 💡 Microsoft Clarity: Heatmaps and user session recordings.
   // Copy and paste only the 10-character alphanumeric project ID from the Clarity script.
-  CLARITY_ID: process.env.NEXT_PUBLIC_CLARITY_ID || null, 
+  CLARITY_ID: process.env.NEXT_PUBLIC_CLARITY_ID || 'x54p4nx5rr', 
 
   // Umami Analytics (Open-source, privacy-focused alternative to GA - Optional)
   UMAMI_HOST: process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is/script.js', // Umami script URL
