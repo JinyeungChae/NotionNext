@@ -42,7 +42,7 @@ module.exports = {
   // 💡 Google Site Verification: For Google Search Console ownership verification.
   // Paste the content value from the verification meta tag.
   SEO_GOOGLE_SITE_VERIFICATION:
-    process.env.NEXT_PUBLIC_SEO_GOOGLE_SITE_VERIFICATION || '', 
+    process.env.NEXT_PUBLIC_SEO_GOOGLE_SITE_VERIFICATION || 'IhlYKI0KmM4Q-DfmvTsWruu0Mmm9yqLd2nweQ0O0FTQ', 
 
   // Baidu Site Verification: For Baidu Webmaster Tools verification. (Optional)
   SEO_BAIDU_SITE_VERIFICATION:
