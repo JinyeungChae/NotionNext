@@ -62,11 +62,11 @@ const BLOG = {
 
   LINK:
     process.env.NEXT_PUBLIC_LINK ||
-    'https://notion-next-mu-mocha-48.vercel.app/',
+    'https://start-notion.com',
   // Website URL
 
   KEYWORDS:
-    process.env.NEXT_PUBLIC_KEYWORD || 'Notion, Blog',
+    process.env.NEXT_PUBLIC_KEYWORD || 'START-NOTION, Notion, Blog',
   // Website keywords (comma-separated)
 
   BLOG_FAVICON:
