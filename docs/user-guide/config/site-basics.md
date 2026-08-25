@@ -25,11 +25,11 @@
 网站的社交地址，站点域名，作者信息，以及默认主题在站点的配置文件 [blog.config.js ](https://github.com/notionnext-org/NotionNext/blob/fd29df3b26211aad04a9e6462cae038d7006e826/blog.config.js#L20-L34)中可以找到，您可以在配置文件中修改配置。
 
 ```JavaScript
-AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
-BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
+AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'START-NOTION', // 您的昵称 例如 tangly1024
+BIO: process.env.NEXT_PUBLIC_BIO || 'Every Great Business Starts as a Notion.', // 作者简介
 LINK: process.env.NEXT_PUBLIC_LINK || '/user-guide/intro', // 网站地址
-KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
-SINCE: process.env.NEXT_SINCE || 2021, // 建站年份
+KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'START-NOTION | Every Great Business Starts as a Notion.', // 网站关键词 英文逗号隔开
+SINCE: process.env.NEXT_SINCE || 2026, // 建站年份
 ```
 
 ::: tip 提示
