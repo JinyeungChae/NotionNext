@@ -2,45 +2,5 @@
   "cleanUrls": false,
   "trailingSlash": false,
   "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_MESSAGE\" in *\"[skip-version]\"*) exit 0;; *) exit 1;; esac",
-  "headers": [],
-  "routes": [
-    {
-      "src": "/(.*)-category-google-adsense-economics",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/top-50-websites-in-(.*)",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/(.*)-top-50-websites-category-trends-2024",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/solopreneur-(.*)",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/population-pyramid-the-solopreneur",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/characteristics-and-interests-of-each-generation-in-korea",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "src": "/the-solopreneurs-google-adsense-economics",
-      "status": 301,
-      "headers": { "Location": "https://start-notion.com" }
-    },
-    {
-      "handle": "filesystem"
-    }
-  ]
+  "headers": []
 }
