@@ -461,6 +461,46 @@ const nextConfig = {
     // 这里的配置既可以服务端获取到，也可以在浏览器端获取到
     THEMES: themes
   }
+  ,
+  async redirects() {
+    return [
+      {
+        source: '/:slug*-category-google-adsense-economics',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/top-50-websites-in-:slug*',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/:country*-top-50-websites-category-trends-2024',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/solopreneur-:country*',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/population-pyramid-the-solopreneur',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/characteristics-and-interests-of-each-generation-in-korea',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      },
+      {
+        source: '/the-solopreneurs-google-adsense-economics',
+        destination: 'https://start-notion.com',
+        permanent: true,
+      }
+    ]
+  }
 }
 
 module.exports = process.env.ANALYZE
