@@ -3,41 +3,44 @@
   "trailingSlash": false,
   "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_MESSAGE\" in *\"[skip-version]\"*) exit 0;; *) exit 1;; esac",
   "headers": [],
-  "redirects": [
+  "routes": [
     {
-      "source": "/:slug*-category-google-adsense-economics",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/(.*)-category-google-adsense-economics",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/top-50-websites-in-:slug*",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/top-50-websites-in-(.*)",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/:country*-top-50-websites-category-trends-2024",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/(.*)-top-50-websites-category-trends-2024",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/solopreneur-:country*",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/solopreneur-(.*)",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/population-pyramid-the-solopreneur",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/population-pyramid-the-solopreneur",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/characteristics-and-interests-of-each-generation-in-korea",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/characteristics-and-interests-of-each-generation-in-korea",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
     },
     {
-      "source": "/the-solopreneurs-google-adsense-economics",
-      "destination": "https://www.start-notion.com",
-      "permanent": true
+      "src": "/the-solopreneurs-google-adsense-economics",
+      "status": 301,
+      "headers": { "Location": "https://start-notion.com" }
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
