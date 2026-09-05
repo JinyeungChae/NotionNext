@@ -465,22 +465,22 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:slug*-category-google-adsense-economics',
+        source: '/:slug-category-google-adsense-economics',
         destination: 'https://start-notion.com',
         permanent: true,
       },
       {
-        source: '/top-50-websites-in-:slug*',
+        source: '/top-50-websites-in-:slug',
         destination: 'https://start-notion.com',
         permanent: true,
       },
       {
-        source: '/:country*-top-50-websites-category-trends-2024',
+        source: '/:country-top-50-websites-category-trends-2024',
         destination: 'https://start-notion.com',
         permanent: true,
       },
       {
-        source: '/solopreneur-:country*',
+        source: '/solopreneur-:country',
         destination: 'https://start-notion.com',
         permanent: true,
       },
